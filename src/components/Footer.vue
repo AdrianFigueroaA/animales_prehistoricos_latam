@@ -14,6 +14,7 @@
         text
         rounded
         class="my-2"
+        :to="{name:'Inicio'}"
       >
         {{ link }}
       </v-btn>
@@ -33,10 +34,12 @@
       name: 'Footer',
     data: () => ({
       links: [
-        'Home',
-        'About Us',
-        'Contact Us',
+      {  Home:"mdi-heart",text: "Inicio", route: "/"},
+      {  Contact:"mdi-heart",text: "Contacto", route: "/Contacto"}
+        
       ],
     }),
   }
 </script>
+
+

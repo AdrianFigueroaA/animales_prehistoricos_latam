@@ -1,18 +1,21 @@
 <template>
   <div >
-    <Carousel />
-    <h1>asdfghj</h1>
+ <Carousel />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Carousel from "../components/Carousel";
 
+import Carousel from "../components/Carousel";
 export default {
   name: "Inicio",
   components: {
-    name:Carousel,
+    Carousel,
   },
+  data: () => ({
+    model: 0,
+    colors: ["primary", "secondary", "yellow darken-2", "red", "orange"],
+  }),
 };
 </script>

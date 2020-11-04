@@ -1,6 +1,6 @@
 <template>
   <v-container class="grey lighten-5">
-    <v-row :align="align" style="height: 200px;">
+    <v-row  style="height: 200px;">
       <v-col v-for="(dino, i) in dinosaurios" :key="i" md="4">
         <v-card class="mx-auto" max-width="400">
           <v-img :src="dino.imagen" height="200px"></v-img>
@@ -17,7 +17,7 @@
               Compartir
             </v-btn>
 
-            <v-btn color="orange" text v-bind="attrs" v-on="on">
+            <v-btn color="orange" text >
               Quieres Saber Mas?
             </v-btn>
 
@@ -39,7 +39,7 @@ export default {
   },
 
   data: () => ({
-    alignments: ["start", "center", "end"],
+    
     dinosaurios: [
       {
         id: 1,

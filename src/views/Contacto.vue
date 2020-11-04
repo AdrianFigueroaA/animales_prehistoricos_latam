@@ -16,15 +16,10 @@
       required
     ></v-text-field>
 
-    <v-select
-      v-model="select"
-      :items="items"
-      :rules="[(v) => !!v || 'Item is required']"
-      label="Item"
-      required
-    ></v-select>
 
 
+<v-text-field   label="Ingresa tu mensaje!"></v-text-field>
+    
     <v-btn :disabled="!valid" color="success" class="mr-4" @click="validate">
       Enviar
     </v-btn>
